@@ -4,6 +4,7 @@ import bonefire from '../../Img/bonefire.jpg';
 import burger from '../../Img/burnt-ends-burger.jpg';
 import ribfeast from '../../Img/hot-honey-glaze-ribfeast.jpg';
 import bone from '../../Img/bone-in-ribeye-w-kurvball-glaze.jpg';
+import mars from '../../Img/mars-planet.png';
 
 
 export const Home: React.FC = () => {
@@ -35,19 +36,19 @@ export const Home: React.FC = () => {
     <section className='third'>
         <div className='images'>
             <div>
-                <img src={bonefire} />
+                <img src={bonefire} alt='food' />
                 <p>Bonefire</p>
             </div>
             <div>
-                <img src={burger} />
+                <img src={burger} alt='food' />
                 <p>Burger</p>
             </div>
             <div>
-                <img src={bone} />
+                <img src={bone} alt='food' />
                 <p>18oz Bone-in Ribeye</p>
             </div>
             <div className='big'>
-                <img src={ribfeast} />
+                <img src={ribfeast} alt='food' />
                 <p>Hot Honey Glaze Ribfeast</p>
             </div>
         </div>
@@ -55,6 +56,7 @@ export const Home: React.FC = () => {
             <h1>WHAT'S ON THE MENU</h1>
             <p>“Meat is what we do®” and we do it like no one else. From our sweet and smokey BBQ platters to a tabletop grill with all you can meat, our meat masters carve everything you crave.</p>
             <button>ORDER NOW</button>
+            <img src={mars} alt='planet' />
         </div>
     </section>
 
