@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './Order.css';
 import hero from '../../Img/order_hero.jpg';
+import ajax from '../../Img/ajax-loader.jpg';
 
 
 export const Order: React.FC = () => {
+    const [zip, setZip] = useState(false);
+    const loudingRef = useRef<{value: boolean}>({value: false});
+
+    const onSearch = () => {
+
+        loudingRef.current.value = true;
+        setZip(false);
+
+        setTimeout(() => {
+
+            if (loudingRef.current) {
+                loudingRef.current.value = false;
+                setZip(true);
+            }
+        }, 1500);
+    }
+
+
   return (
     <section className='order'>
         <div style={{display:'flex', alignItems: 'flex-end', justifyContent: 'center'}}>
@@ -17,7 +36,13 @@ export const Order: React.FC = () => {
                     <p>FIND YOUR SPACE BONES</p>
                     <input type='text' placeholder='Enter ZIP' />
                 </div>
-                <button>Find My Space Bones</button>
+                <button onClick={onSearch}>Find My Space Bones</button>
+                <div style={{width: 0}}>
+                <img className={loudingRef.current.value ? '' : 'none'} src={ajax} alt='louding' width={40} />
+                </div>
+                <div className={zip ? 'no-location' : 'none'}>
+                    <p>SORRY, NO LOCATIONS WERE FOUND.</p>
+                </div>
             </div>
         </div>
     </section>

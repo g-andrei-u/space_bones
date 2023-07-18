@@ -6,15 +6,16 @@ h1 {
   box-sizing: border-box;
   margin-top: 70px;
 }
-.first button {
+.first .button {
   background-color: red;
   color: white;
   font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
   padding: 9px 17px;
   border: 0px;
 }
-.first button:hover {
+.first .button:hover {
   cursor: pointer;
   background-color: rgb(174, 0, 0);
   transition: 200ms;
@@ -40,15 +41,16 @@ h1 {
   text-align: center;
   padding: 55px 0;
 }
-.second button {
+.second .button {
   background-color: red;
   color: white;
   font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
   padding: 9px 17px;
   border: 0px;
 }
-.second button:hover {
+.second .button:hover {
   cursor: pointer;
   background-color: rgb(174, 0, 0);
   transition: 200ms;
@@ -120,15 +122,16 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.third .text button {
+.third .text .button {
   background-color: red;
   color: white;
   font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
   padding: 9px 17px;
   border: 0px;
 }
-.third .text button:hover {
+.third .text .button:hover {
   cursor: pointer;
   background-color: rgb(174, 0, 0);
   transition: 200ms;
@@ -145,15 +148,16 @@ h1 {
   text-align: center;
   margin: 50px 23%;
 }
-.team button {
+.team .button {
   background-color: red;
   color: white;
   font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
   padding: 9px 17px;
   border: 0px;
 }
-.team button:hover {
+.team .button:hover {
   cursor: pointer;
   background-color: rgb(174, 0, 0);
   transition: 200ms;
@@ -165,6 +169,45 @@ h1 {
 .team p {
   font-size: 18px;
   margin: 25px 0;
+}
+
+.fourth {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 40px;
+}
+.fourth .button {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 9px 17px;
+  border: 0px;
+}
+.fourth .button:hover {
+  cursor: pointer;
+  background-color: rgb(174, 0, 0);
+  transition: 200ms;
+}
+.fourth .one, .fourth .two {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fourth .one h3, .fourth .two h3 {
+  font-size: 35px;
+}
+.fourth .one h4, .fourth .two h4 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+.fourth .one img, .fourth .two img {
+  width: 650px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=Home.css.map */

@@ -117,3 +117,17 @@ nav a:hover {
 .zip-head button:hover {
     background-color: white;
 }
+
+.no-location2 {
+    position: relative;
+    top: 33px;
+    right: 220px;
+    width: 0;
+}
+
+.no-location2 p {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    width: 220px;
+}

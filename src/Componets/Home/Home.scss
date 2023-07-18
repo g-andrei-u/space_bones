@@ -1,9 +1,10 @@
 @mixin button {
-    button {
+    .button {
         background-color: red;
         color: white;
         font-size: 20px;
         font-weight: 600;
+        text-decoration: none;
         padding: 9px 17px;
         border: 0px;
     
@@ -43,6 +44,7 @@ h1 {
     }
 }
 
+
 .second {
     display: flex;
     justify-content: center;
@@ -61,6 +63,7 @@ h1 {
         }
     }
 }
+
 
 .third {
     background-color: black;
@@ -141,6 +144,7 @@ h1 {
     }
 }
 
+
 .team {
     text-align: center;
     margin: 50px 23%;
@@ -154,5 +158,34 @@ h1 {
     p {
         font-size: 18px;
         margin: 25px 0;
+    }
+}
+
+
+.fourth {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 40px;
+    @include button();
+
+    .one, .two {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-size: 35px;
+        }
+        h4 {
+            font-size: 25px;
+            font-weight: 400;
+            margin: 0;
+        }
+        img {
+            width: 650px;
+            border-radius: 10px;
+        }
     }
 }
