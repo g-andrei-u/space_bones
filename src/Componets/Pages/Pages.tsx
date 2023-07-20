@@ -5,6 +5,8 @@ import { Home } from '../Home/Home';
 import { Footer } from '../Common/Footer';
 import { Menu } from '../Menu/Menu';
 import { Order } from '../Order/Order';
+import { menuItems } from '../Data/Data';
+import { Items } from '../Menu/Items/Items';
 
 export const Pages: React.FC = () => {
   return (
@@ -14,6 +16,9 @@ export const Pages: React.FC = () => {
             <Route path='/' element={<Home />} />
             <Route path='/menu' element={<Menu />} />
             <Route path='/order' element={<Order />} />
+            {menuItems.map((item) => (
+              <Route path={item.path} element={<Items name={item.name} />} />
+            ))}
         </Routes>
         <Footer />
     </BrowserRouter>
