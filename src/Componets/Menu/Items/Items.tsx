@@ -13,7 +13,7 @@ export const Items: React.FC<Props> = (props: Props) => {
     <div className='first-menu' id='here'>
         <h1>{props.name.toUpperCase()}</h1>
         <p>Available Monday - Friday between 11am-3pm. Dine-in only at participating locations.</p>
-        <button>FIND LOCATION</button>
+        <button className='button'>FIND LOCATION</button>
         <img src={sun} />
     </div>
     <section className='items'>

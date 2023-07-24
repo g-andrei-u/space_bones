@@ -1,0 +1,78 @@
+@import '../Home/Home.scss';
+
+h2 {
+    font-size: 45px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.reward-first {
+    padding: 0 40px;
+    margin-top: 70px;
+     
+    h4 {
+        padding: 10px 0;
+        margin: 0;
+    }
+}
+
+.reward-second {
+    background-image: url(../../Img/red_rings.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 35%;
+    @include button();
+
+    h1 {
+        font-size: 65px;
+        font-weight: 300;
+    }
+
+    .button {
+        background-color: rgb(33, 33, 33);
+        margin: 0 20px;
+    }
+}
+
+.reward-third {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 50px 30%;
+
+    h2 {
+        font-weight: 500;
+    }
+}
+
+.reward-fourth {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 10% 150px 10%;
+
+    div {
+        width: 320px;
+
+        img {
+            width: 120px;
+        }
+    
+        h2 {
+            font-weight: 500;
+            margin: 10px 0;
+        }
+    
+        p {
+            font-weight: 300;
+        }
+    }
+}

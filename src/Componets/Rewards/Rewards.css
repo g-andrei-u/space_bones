@@ -210,15 +210,32 @@ h1 {
   border-radius: 10px;
 }
 
-.first-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 80px 30%;
+h2 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.reward-first {
+  padding: 0 40px;
   margin-top: 70px;
 }
-.first-menu .button {
+.reward-first h4 {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.reward-second {
+  background-image: url(../../Img/red_rings.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 120px 35%;
+}
+.reward-second .button {
   background-color: red;
   color: white;
   font-size: 20px;
@@ -227,93 +244,52 @@ h1 {
   padding: 9px 17px;
   border: 0px;
 }
-.first-menu .button:hover {
+.reward-second .button:hover {
   cursor: pointer;
   background-color: rgb(174, 0, 0);
   transition: 200ms;
 }
-.first-menu h1 {
-  font-size: 75px;
-  border-bottom: 8px solid black;
-  margin: 0 0 30px 0;
+.reward-second h1 {
+  font-size: 65px;
+  font-weight: 300;
 }
-.first-menu img {
-  position: absolute;
-  top: 100px;
-  right: 70px;
-  width: 300px;
+.reward-second .button {
+  background-color: rgb(33, 33, 33);
+  margin: 0 20px;
 }
 
-.menu {
+.reward-third {
   background-color: rgb(33, 33, 33);
+  color: white;
+  text-align: center;
+  padding: 50px 30%;
+}
+.reward-third h2 {
+  font-weight: 500;
+}
+
+.reward-fourth {
+  background-color: rgb(33, 33, 33);
+  color: white;
   display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 60px 40px;
+  padding: 20px 10% 150px 10%;
 }
-.menu .item {
-  text-decoration: none;
+.reward-fourth div {
+  width: 320px;
 }
-.menu .item img {
-  width: 350px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 7px;
-  margin: 0 5px;
+.reward-fourth div img {
+  width: 120px;
 }
-.menu .item h3 {
-  background-color: rgb(230, 230, 230);
-  color: black;
-  text-align: center;
-  padding: 4px 0;
-  border-radius: 7px;
-  margin: 5px 5px 55px 5px;
+.reward-fourth div h2 {
+  font-weight: 500;
+  margin: 10px 0;
 }
-.menu .item h3:hover {
-  background-color: white;
-}
-.menu .item:hover h3 {
-  background-color: white;
+.reward-fourth div p {
+  font-weight: 300;
 }
 
-.items {
-  background-color: rgb(33, 33, 33);
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 80px 40px;
-}
-.items .item {
-  width: 450px;
-  margin: 20px 50px;
-}
-.items .item h3 {
-  font-size: 25px;
-}
-
-.info {
-  background-color: rgb(33, 33, 33);
-  text-align: center;
-}
-.info .button {
-  background-color: red;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 9px 17px;
-  border: 0px;
-}
-.info .button:hover {
-  cursor: pointer;
-  background-color: rgb(174, 0, 0);
-  transition: 200ms;
-}
-.info button {
-  font-size: 16px;
-  margin: -20px 20px 90px 20px;
-}
-
-/*# sourceMappingURL=Menu.css.map */
+/*# sourceMappingURL=Rewards.css.map */

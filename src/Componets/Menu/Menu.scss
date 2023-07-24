@@ -1,19 +1,4 @@
-@mixin button {
-    button {
-        background-color: red;
-        color: white;
-        font-size: 20px;
-        font-weight: 600;
-        padding: 9px 17px;
-        border: 0px;
-    
-        &:hover {
-            cursor: pointer;
-            background-color: rgb(174, 0, 0);
-            transition: 200ms;
-        }
-    }
-}
+@import '../Home/Home.scss';
 
 
 .first-menu {
@@ -41,7 +26,7 @@
 
 
 .menu {
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -81,7 +66,7 @@
 }
 
 .items {
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +84,7 @@
 }
 
 .info {
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     text-align: center;
     @include button();
     

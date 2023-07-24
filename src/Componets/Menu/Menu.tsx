@@ -10,7 +10,7 @@ export const Menu: React.FC = () => {
     <>
     <section className='first-menu' id='#here'>
         <h1>SPACE BONES MENU</h1>
-        <button>ORDER ONLINE</button>
+        <Link to='/order' className='button'>ORDER ONLINE</Link>
         <img src={mars} />
     </section>
     <section className='menu'>
@@ -22,8 +22,8 @@ export const Menu: React.FC = () => {
         ))}
     </section>
     <section className='info'>
-        <button>ALLERGEN INFORMATION</button>
-        <button>GLUTEN FREE MENU</button>
+        <button className='button'>ALLERGEN INFORMATION</button>
+        <button className='button'>GLUTEN FREE MENU</button>
     </section>
     </>
   );

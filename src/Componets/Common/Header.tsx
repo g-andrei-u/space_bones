@@ -44,6 +44,7 @@ export const Header: React.FC = () => {
           <Link to='/'>HOME</Link>
           <Link to='/menu'>MENU</Link>
           <Link onMouseEnter={onEnter} to='/'>SPECIALS</Link>
+          <Link to='/rewards'>REWARDS</Link>
           <Link style={{color: 'red'}} to='/order'>ORDER NOW</Link>
         </nav>
 

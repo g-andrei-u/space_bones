@@ -15,7 +15,7 @@ header {
     color: white;
     display: flex;
     align-items: center;
-    width: 33%;
+    width: 32%;
 }
 
 .logo h2 {
@@ -32,7 +32,7 @@ header {
 }
 
 nav {
-    width: 33%;
+    width: 36%;
     display: flex;
     justify-content: space-between;
 }
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .zip-head {
-    width: 33%;
+    width: 32%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
