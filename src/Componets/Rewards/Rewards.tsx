@@ -3,6 +3,7 @@ import './Rewards.css';
 import icon3 from '../../Img/chow_down.png';
 import icon2 from '../../Img/chow_down2.png';
 import icon from '../../Img/chow_down3.png';
+import { Link } from 'react-router-dom';
 
 
 export const Rewards: React.FC = () => {
@@ -36,6 +37,13 @@ export const Rewards: React.FC = () => {
             <img src={icon3} alt ='icon'/>
             <h2>CHOW DOWN</h2>
             <p>Redeem your points on your favorite dishes and reap the meaty rewards.</p>
+        </div>
+    </section>
+    <section className='second'>
+        <div className='text'>
+            <h2><strong style={{fontWeight: '400'}}>GIFT CARDS.</strong> SHOW YOU CARE</h2>
+            <p>The perfect gift: a Smokey Bones gift card.</p>
+            <Link to='/rewards' className='button'>E-GIFT TODAY</Link>
         </div>
     </section>
     </>

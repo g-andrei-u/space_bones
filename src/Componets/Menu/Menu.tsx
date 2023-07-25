@@ -8,6 +8,9 @@ import mars from '../../Img/mars-new-planet.png';
 export const Menu: React.FC = () => {
   return (
     <>
+    <section className='reward-first'>
+        <h4>SPACE MENU</h4>
+    </section>
     <section className='first-menu' id='#here'>
         <h1>SPACE BONES MENU</h1>
         <Link to='/order' className='button'>ORDER ONLINE</Link>
