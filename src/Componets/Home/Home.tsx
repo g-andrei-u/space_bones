@@ -64,7 +64,7 @@ export const Home: React.FC = () => {
     </section>
 
     <section className='team'>
-        <h1>JOIN THE SMOKEY BONES TEAM!</h1>
+        <h1>JOIN THE SPACE BONES TEAM!</h1>
         <p>Passion is the different between a job and a career! With over 200 leadership positions across our restaurants, we provide a pathway for thousands of team members who work in our restaurants to advance from entry-level roles into management careers. Hiring cooks, servers, bartenders, greeters, takeout.</p>
         <button className='button'>JOIN OUR TEAM</button>
     </section>

@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
         <nav>
           <Link to='/'>HOME</Link>
           <Link to='/menu'>MENU</Link>
-          <Link onMouseEnter={onEnter} to='/'>SPECIALS</Link>
+          <Link onMouseEnter={onEnter} to='/specials'>SPECIALS</Link>
           <Link to='/rewards'>REWARDS</Link>
           <Link style={{color: 'red'}} to='/order'>ORDER NOW</Link>
         </nav>
@@ -65,10 +65,10 @@ export const Header: React.FC = () => {
         </div>
 
         <div className={showSpecials ? 'specials-menu' : 'none'}>
-          <Link to='/'>LIMITED TIME OFFERS</Link>
-          <Link to='/'>BONES AFTER MARS</Link>
-          <Link to='/'>BBQ PARTY PACKS</Link>
-          <Link to='/'>BUY ONE GET ONE</Link>
+          <Link to='/specials'>LIMITED TIME OFFERS</Link>
+          <Link to='/specials'>BONES AFTER MARS</Link>
+          <Link to='/specials'>BBQ PARTY PACKS</Link>
+          <Link to='/specials'>BUY ONE GET ONE</Link>
         </div>
     </header>
   );

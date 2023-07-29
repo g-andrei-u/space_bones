@@ -8,6 +8,7 @@ import { Order } from '../Order/Order';
 import { menuItems } from '../Data/Data';
 import { Items } from '../Menu/Items/Items';
 import { Rewards } from '../Rewards/Rewards';
+import { Specials } from '../Specials/Specials';
 
 export const Pages: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ export const Pages: React.FC = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/menu' element={<Menu />} />
+            <Route path='/specials' element={<Specials />} />
             <Route path='/rewards' element={<Rewards />} />
             <Route path='/order' element={<Order />} />
             {menuItems.map((item) => (

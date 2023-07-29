@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             <AiFillInstagram />
           </div>
             <p>ABOUT | PRESS | CONTACT | BONES CLUB | GIFT CARDS | JOBS | NUTRITIONAL INFO</p>
-            <p>© 2023 Smokey Bones. All rights reserved. Legal</p>
+            <p>© 2023 Space Bones. All rights reserved. Legal</p>
         </div>
     </footer>
   );
