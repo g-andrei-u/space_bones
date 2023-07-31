@@ -118,6 +118,10 @@ nav a:hover {
     background-color: white;
 }
 
+.after-zip {
+    display: none;
+}
+
 .no-location2 {
     position: relative;
     top: 33px;
@@ -130,4 +134,102 @@ nav a:hover {
     color: black;
     font-size: 15px;
     width: 220px;
+}
+
+.hamburgher {
+    width: 40%;
+    display: none;
+    justify-content: center;
+}
+
+.hamburgher button {
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 40px;
+    border: 0px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+    
+    .logo h2 {
+        font-size: 35px;
+    }
+    
+    .logo img {
+        width: 62px;
+    }
+
+    nav {
+        width: 40%;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+    
+    .zip-head {
+        width: 30%;
+    }
+
+    .zip-head input {
+        width: 110px;
+    }
+    
+    .zip-head button {
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+
+    .no-location2 {
+        right: 210px;
+    }
+    
+    .no-location2 p {
+        width: 210px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+    
+    .logo h2 {
+        font-size: 35px;
+    }
+    
+    .logo img {
+        width: 62px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburgher {
+        display: flex;
+    }
+    
+    .zip-head {
+        display: none;
+    }
+
+    .after-zip {
+        display: flex;
+    }
 }

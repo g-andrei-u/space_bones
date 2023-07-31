@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../Img/logo.png';
@@ -7,6 +8,7 @@ import ajax from '../../Img/ajax-loader.jpg';
 
 export const Header: React.FC = () => {
   const [showSpecials, setShowSpecials] = useState(false);
+  const [showHamburgher, setShowHamburgher] = useState(false);
   const [zip, setZip] = useState(false);
   const loudingRef = useRef<{value: boolean}>({value: false});
 
@@ -48,6 +50,12 @@ export const Header: React.FC = () => {
           <Link style={{color: 'red'}} to='/order'>ORDER NOW</Link>
         </nav>
 
+        <div className='hamburgher'>
+          <button onClick={() => setShowHamburgher(!showHamburgher)}>
+            <GiHamburgerMenu />
+          </button>
+        </div>
+
         <div className='zip-head'>
           <div>
             <p>FIND YOUR SPACE BONES</p>
@@ -64,11 +72,22 @@ export const Header: React.FC = () => {
           </div>
         </div>
 
+        <div className='after-zip' style={{width: '30%', justifyContent: 'center'}}>
+        <Link style={{color: 'red', textDecoration: 'none', fontSize: 24}} to='/order'>ORDER NOW</Link>
+        </div>
+
         <div className={showSpecials ? 'specials-menu' : 'none'}>
           <Link to='/specials'>LIMITED TIME OFFERS</Link>
           <Link to='/specials'>BONES AFTER MARS</Link>
           <Link to='/specials'>BBQ PARTY PACKS</Link>
           <Link to='/specials'>BUY ONE GET ONE</Link>
+        </div>
+
+        <div className={showHamburgher ? 'specials-menu' : 'none'}>
+          <Link to='/'>HOME</Link>
+          <Link to='/menu'>MENU</Link>
+          <Link to='/specials'>SPECIALS</Link>
+          <Link to='/rewards'>REWARDS</Link>
         </div>
     </header>
   );
