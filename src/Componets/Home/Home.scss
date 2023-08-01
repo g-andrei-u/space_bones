@@ -101,6 +101,7 @@ h1 {
 
         .big {
             img {
+                aspect-ratio: 2/1;
                 width: 100%;
                 height: 500px;
                 object-fit: cover;
@@ -192,7 +193,7 @@ h1 {
 
     .fourth {
         grid-template-rows: 1fr 1fr;
-        padding: 50px 20px !important;
+        padding: 50px 20px;
     
         .one, .two {
             margin-bottom: 40px;
@@ -246,17 +247,82 @@ h1 {
         }
     }
 
-    .third {  
+    .third {
+        .text {
+            padding: 120px 0 0 0 !important;
+        }
+    }
+}
+
+
+@media all and (max-width: 420px) {
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    .first {   
+        .video-text {
+            top: 30vh !important;
+            margin: 0 8px !important;
+        }
+    }
+
+    .second {   
+        .text {
+            h2 {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .third {
+        padding: 50px 8px !important;
+    
         .images {
+            justify-content: space-around !important;
+            img {
+                width: 170px !important;
+                height: 170px !important;
+            }
+    
+            p {
+                width: 170px !important;
+            }
             .big {
                 img {
-                    height: 400px !important;
+                    width: 100% !important
+                }
+                p {
+                    width: 100% !important;
                 }
             }
         }
 
         .text {
-            padding: 120px 0 0 0 !important;
+            grid-column: 2/3;
+            padding: 120px 0 0 40px;
+    
+            img {
+                width: 250px !important;
+                margin-top: 70px;
+            }
+        }
+    }
+
+    .fourth {
+        padding: 50px 8px;
+        .one, .two {
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+
+    .team {
+        margin: 50px 20px !important;
+        p {
+            font-size: 15px !important;
         }
     }
 }

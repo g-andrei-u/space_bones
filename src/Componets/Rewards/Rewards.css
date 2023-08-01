@@ -96,6 +96,7 @@ h1 {
   margin: 0;
 }
 .third .images .big img {
+  aspect-ratio: 2/1;
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -213,7 +214,7 @@ h1 {
 @media all and (max-width: 900px) {
   .fourth {
     grid-template-rows: 1fr 1fr;
-    padding: 50px 20px !important;
+    padding: 50px 20px;
   }
   .fourth .one, .fourth .two {
     margin-bottom: 40px;
@@ -254,11 +255,59 @@ h1 {
   .fourth .one img, .fourth .two img {
     width: 400px !important;
   }
-  .third .images .big img {
-    height: 400px !important;
-  }
   .third .text {
     padding: 120px 0 0 0 !important;
+  }
+}
+@media all and (max-width: 420px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  .first .video-text {
+    top: 30vh !important;
+    margin: 0 8px !important;
+  }
+  .second .text h2 {
+    font-size: 35px !important;
+  }
+  .third {
+    padding: 50px 8px !important;
+  }
+  .third .images {
+    justify-content: space-around !important;
+  }
+  .third .images img {
+    width: 170px !important;
+    height: 170px !important;
+  }
+  .third .images p {
+    width: 170px !important;
+  }
+  .third .images .big img {
+    width: 100% !important;
+  }
+  .third .images .big p {
+    width: 100% !important;
+  }
+  .third .text {
+    grid-column: 2/3;
+    padding: 120px 0 0 40px;
+  }
+  .third .text img {
+    width: 250px !important;
+    margin-top: 70px;
+  }
+  .fourth {
+    padding: 50px 8px;
+  }
+  .fourth .one img, .fourth .two img {
+    max-width: 300px;
+  }
+  .team {
+    margin: 50px 20px !important;
+  }
+  .team p {
+    font-size: 15px !important;
   }
 }
 h2 {
@@ -461,6 +510,19 @@ h4 {
   }
   .reward-first h4 {
     font-size: 28px;
+  }
+  .reward-second {
+    padding: 120px 5%;
+  }
+  .four {
+    padding: 40px 8px;
+  }
+  .four .one p {
+    width: 300px;
+  }
+  .four .one img {
+    width: 300px;
+    height: 180px;
   }
 }
 

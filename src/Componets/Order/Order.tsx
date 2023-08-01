@@ -25,8 +25,8 @@ export const Order: React.FC = () => {
 
   return (
     <section className='order'>
-        <div style={{display:'flex', alignItems: 'flex-end', justifyContent: 'center'}}>
-            <img src={hero} alt='' />
+        <div className='image' style={{display:'flex', alignItems: 'flex-end', justifyContent: 'center'}}>
+            <img src={hero} alt='food' />
         </div>
         <div className='zip-div'>
             <h2>IF YOU CRAVE IT, WE CARVE IT</h2>
