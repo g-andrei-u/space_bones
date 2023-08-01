@@ -231,5 +231,35 @@ nav a:hover {
 
     .after-zip {
         display: flex;
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 0 8px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+    
+    .logo h2 {
+        font-size: 30px;
+    }
+    
+    .logo img {
+        bottom: 7px;
+        width: 51px;
+    }
+
+    .hamburgher {
+        width: 30%;
+    }
+
+    .after-zip {
+        display: flex;
+        font-size: 20px;
     }
 }

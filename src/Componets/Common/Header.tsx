@@ -73,7 +73,7 @@ export const Header: React.FC = () => {
         </div>
 
         <div className='after-zip' style={{width: '30%', justifyContent: 'center'}}>
-        <Link style={{color: 'red', textDecoration: 'none', fontSize: 24}} to='/order'>ORDER NOW</Link>
+        <Link style={{color: 'red', textDecoration: 'none'}} to='/order'>ORDER NOW</Link>
         </div>
 
         <div className={showSpecials ? 'specials-menu' : 'none'}>

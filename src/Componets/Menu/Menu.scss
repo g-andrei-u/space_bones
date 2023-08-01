@@ -91,3 +91,65 @@
         margin: -20px 20px 90px 20px;
     }
 }
+
+
+@media all and (max-width: 900px) {
+
+    .first-menu {
+        padding: 150px 20%;
+        img {
+            top: 200px;
+            right: 40px;
+            width: 200px;
+        }
+    }
+
+    .menu {
+        padding: 60px 20px;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+
+    .first-menu {
+        padding: 150px 10%;
+        img {
+            top: 150px;
+            right: 30px;
+            width: 180px;
+        }
+    }
+
+    .menu {
+        padding: 60px 20px;
+    }
+}
+
+
+@media all and (max-width: 400px) {
+
+    .first-menu {
+        padding: 150px 5%;
+        h1 {
+            font-size: 60px;
+        }
+        img {
+            width: 150px;
+        }
+    }
+
+    .menu {
+        padding: 60px 8px;
+        .item {
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    .items {
+        padding: 80px 8px;
+    }
+}
