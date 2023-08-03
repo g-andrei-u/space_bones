@@ -258,6 +258,9 @@ h1 {
   .third .text {
     padding: 120px 0 0 0 !important;
   }
+  .team {
+    margin: 50px 20px !important;
+  }
 }
 @media all and (max-width: 420px) {
   h1 {
@@ -302,9 +305,6 @@ h1 {
   }
   .fourth .one img, .fourth .two img {
     max-width: 300px;
-  }
-  .team {
-    margin: 50px 20px !important;
   }
   .team p {
     font-size: 15px !important;
@@ -514,6 +514,27 @@ h4 {
   .reward-second {
     padding: 120px 5%;
   }
+  .reward-third {
+    padding: 50px 5%;
+  }
+  .specials-first {
+    padding: 80px 5%;
+  }
+  .specials-first h2 {
+    font-size: 45px;
+  }
+  .reward-fourth {
+    padding: 20px 10% 80px 10%;
+  }
+  .reward-fourth div {
+    padding: 30px 0;
+  }
+  .reward-fourth div img {
+    width: 100px;
+  }
+  .reward-fourth div h2 {
+    margin: 5px 0;
+  }
   .four {
     padding: 40px 8px;
   }
@@ -523,6 +544,14 @@ h4 {
   .four .one img {
     width: 300px;
     height: 180px;
+  }
+}
+@media all and (max-width: 350px) {
+  .reward-second {
+    padding: 120px 2%;
+  }
+  .reward-second .button {
+    margin: 0 15px;
   }
 }
 

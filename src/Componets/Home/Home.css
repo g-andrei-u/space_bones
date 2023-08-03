@@ -258,6 +258,9 @@ h1 {
   .third .text {
     padding: 120px 0 0 0 !important;
   }
+  .team {
+    margin: 50px 20px !important;
+  }
 }
 @media all and (max-width: 420px) {
   h1 {
@@ -302,9 +305,6 @@ h1 {
   }
   .fourth .one img, .fourth .two img {
     max-width: 300px;
-  }
-  .team {
-    margin: 50px 20px !important;
   }
   .team p {
     font-size: 15px !important;

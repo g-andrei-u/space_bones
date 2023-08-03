@@ -217,6 +217,32 @@ h4 {
         padding: 120px 5%;
     }
 
+    .reward-third {
+        padding: 50px 5%;
+    }
+
+    .specials-first {
+        padding: 80px 5%;
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    .reward-fourth {
+        padding: 20px 10% 80px 10%;
+    
+        div {
+            padding: 30px 0;
+    
+            img {
+                width: 100px;
+            }
+            h2 {
+                margin: 5px 0;
+            }
+        }
+    }
+
     .four {
         padding: 40px 8px;
 
@@ -228,6 +254,17 @@ h4 {
                 width: 300px;
                 height: 180px;
             }
+        }
+    }
+}
+
+
+@media all and (max-width: 350px) {
+
+    .reward-second {
+        padding: 120px 2%;
+        .button {
+            margin: 0 15px;
         }
     }
 }
